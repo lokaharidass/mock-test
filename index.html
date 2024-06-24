@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Ingredient Finder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Recipe Ingredient Finder</h1>
+    <div id="app">
+      <div id="inputPage">
+        <h2 class="subtitle">Find Recipes by Ingredients</h2>
+        <form id="ingredientForm">
+          <textarea id="ingredientInput" placeholder="Enter ingredients separated by commas.." required></textarea>
+          <br>
+          <br>
+          <button type="submit" class="btn">Find Recipes</button>
+        </form>
+      </div>
+      <div id="resultsPage" style="display:none;">
+        <h2 id="resultsTitle" class="subtitle"></h2>
+        <div id="recipeList" class="recipe-list"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
